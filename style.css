@@ -1,0 +1,216 @@
+
+body {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+@keyframes blink {
+	50% {
+		background: url('xoback_hover.png');
+		color: #4B40C7;
+	}
+}
+@-webkit-keyframes blink {
+	50% {
+		background: url('xoback_hover.png');
+		color: #4B40C7;
+	}
+}
+@-moz-keyframes blink {
+	50% {
+		background: url('xoback_hover.png');
+		color: #4B40C7;
+	}
+}
+
+
+span {
+	text-align: center;
+	vertical-align: middle;
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	background: url('xoback.png');
+	z-index: 1;
+	font-size: 150px;
+	font-family: helvetica;
+	color: #86ABFF;
+}
+
+.hov:hover {
+	background: url('xoback_hover.png');
+}
+
+.diff-screen, .who-goes {
+	position: absolute;
+	height: 600px;
+	width: 600px;
+	border-radius: 5px;
+	background: linear-gradient(bottom, lightblue 30%, transparent 100%);
+	background: -webkit-linear-gradient(bottom, lightblue 30%, transparent 100%);
+	background: -moz-linear-gradient(bottom, lightblue 30%, transparent 100%);
+	z-index: 2;
+	text-align: center;
+}
+
+
+.who-goes {
+	display: none;
+	background: linear-gradient(bottom, #E58D79 30%, transparent 100%);
+	background: -webkit-linear-gradient(bottom, #E58D79 30%, transparent 100%);
+	background: -moz-linear-gradient(bottom, #E58D79 30%, transparent 100%);
+}
+
+h1 {
+	color: gray;
+	font-family: helvetica;
+	font-weight: 100;
+	text-align: center;
+	font-size: 75px;
+}
+
+h2 {
+	text-align: center;
+	font-family: helvetica;
+	font-weight: 100;
+	font-size: 30px;
+	color: white;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+p {
+	margin-top: 430px;
+	font-size: 25px;
+	font-family: helvetica;
+	color: #46587F;
+}
+
+button {
+	width: 150px;
+	height: 75px;
+	margin: 0 20px;
+	font-size: 60px;
+	border-radius: 10px;
+	font-family: helvetica;
+	border: none;
+}
+
+button:hover {
+	color: #F3ECF7;
+}
+
+.restart {
+	width: 200px;
+	position: absolute;
+	top: 450px;
+	left: -170px;
+	font-size: 45px;
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	color: #878787;
+	opacity: .3;
+	border-left: 4px solid #7F7F7F;
+}
+
+.restart:hover {
+	opacity: 1;
+	background: #E83A39;
+	border-left: 4px solid #8C2323;
+}
+
+.restart:active {
+	background: #8C2323;
+}
+
+.level1, .computer {
+	background: #8DB0FF;
+	color: #576D9E;
+	border-bottom: 4px solid #647DB5;
+}
+
+.level1:active, .computer:active {
+	background: #647DB5;
+}
+
+.level2, .player {
+	background: #FFC25B;
+	color: #8F6C33;
+	border-bottom: 4px solid #A8803C;
+}
+
+.level2:active, .player:active {
+	background: #A8803C;
+}
+
+.level3, .player {
+	background: #FF8A7A;
+	color: #A1574D;
+	border-bottom: 4px solid #C2695D;
+}
+
+.level3:active, .player:active {
+	background: #C2695D;
+}
+
+.center {
+	position: static;
+	margin: 0 auto;
+	background: blue;
+	height: 600px;
+	width: 600px;
+	z-index: 0;
+}
+
+.game {
+	position: relative;
+	height: 600px;
+	width: 600px;
+	background: red;
+	z-index: 0;
+}
+
+.blinky {
+	animation: blink 1s infinite;
+	-webkit-animation: blink 1s infinite;
+	-moz-animation: blink 1s infinite;
+}
+
+
+.two {
+	left: 200px;
+
+}
+
+.three {
+	left: 400px;
+}
+
+.four {
+	top: 200px;
+}
+
+.five {
+	top: 200px;
+	left: 200px;
+}
+
+.six {
+	top: 200px;
+	left: 400px;
+}
+
+.seven {
+	top: 400px;
+}
+
+.eight {
+	top: 400px;
+	left: 200px;
+}
+
+.nine {
+	top: 400px;
+	left: 400px;
+}
